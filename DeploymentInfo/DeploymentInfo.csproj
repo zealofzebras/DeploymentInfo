@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>Sustainable.Web.DeploymentInfo</PackageId>
+    <Authors>zeal aps</Authors>
+    <Product>Azure App Service Deployment Info</Product>
+    <PackageProjectUrl>https://github.com/zealofzebras/DeploymentInfo</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/zealofzebras/DeploymentInfo</RepositoryUrl>
+    <Copyright>zeal aps</Copyright>
+    <Description>At runtime get deployment information for the Azure App Service Deployment. It is easy and simple to obtain the following information:
+* DeploymentID
+* BuildId
+* ReleaseId
+* ReleaseName
+* BuildNumber
+* ReleaseNumber
+* CommitId
+* RepoName
+* RepoProvider
+* SlotName</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+  </ItemGroup>
+
+</Project>
