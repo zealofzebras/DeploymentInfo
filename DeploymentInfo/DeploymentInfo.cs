@@ -34,7 +34,7 @@ namespace DeploymentInfo
 
         public static Deployment GetDeployment(string deploymentId)
         {
-            var deploymentStatusFile = Path.Combine(DeploymentsPath, deploymentId, "status.xml");
+            var deploymentStatusFile = Path.Combine(DeploymentsPath, deploymentId ?? "", "status.xml");
             if (System.IO.File.Exists(deploymentStatusFile))
             {
                 var xml = System.IO.File.ReadAllText(deploymentStatusFile);
